@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kafene Web-App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./queries.js"></script>
+   
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="kafenelogo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <span>Kafene</span>
+            </div>
+            <nav>
+                <a class="nav-list" href="./orders.html">Orders</a>
+                <a class="nav-list" href="./products.html">Products</a>
+                <a class="nav-list" href="./user-details.html">Users</a>
+            </nav>
+        </div>
+        <a id="userout" href="./index.html">Logout</a>
+    </header>
+    <main>
+        <div id="main">
+            <h1>Orders</h1>
+            <div class="container">
+                <div class="filterContainer">
+                    <h3>Filters</h3>
+                    <div class="filter">
+                        <p id="page">Count: </p>
+                        <label class="check"><input type="checkbox" name="firstcheck">New</label>
+                        <label class="check"><input type="checkbox" name="secondcheck">Packed</label>
+                        <label class="check"><input type="checkbox" name="thirdcheck">InTransit</label>
+                        <label class="check"><input type="checkbox" name="fourthcheck">Delivered</label>
+                    </div>
+                </div>
+                <div class="tableCont">
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                        <tbody id="orderRows">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./userout.js"></script>
+    <script src="./orders-details.js"></script>
+</body>
+
+</html>

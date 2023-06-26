@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Kafene Web-App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./navbar.css">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./user-style.css">
+        <script src="./queries.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div id="kafenelogo">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                    <span>Kafene</span>
+                </div>
+                <nav>
+                    <a class="nav-list" href="./orders.html">Orders</a>
+                    <a class="nav-list" href="./products.html">Products</a>
+                    <a class="nav-list" href="./user-details.html">Users</a>
+                </nav>
+            </div>
+            <a id="userout" href="./index.html">Logout</a>
+        </header>
+        <main>
+            <div id="main">
+                <h1>Users</h1>
+                <div class="userstypeBox">
+                    <form id="search">
+                        <input id="typeBox" type="text"  placeholder="Search by Name">
+                        <input id="reset" type="reset">
+                    </form>
+                    <div class="tableCont">
+                        <table id="table">
+                            <tr>
+                                <th>ID</th>
+                                <th>User Avatar</th>
+                                <th>Full Name</th>
+                                <th style="min-width: 150px;">DoB</th>
+                                <th>Gender</th>
+                                <th>Current Location</th>
+                            </tr>
+                            <tbody id="userRows">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./userout.js"></script>
+        <script src="./user-details.js"></script>
+    </body>
+</html>
